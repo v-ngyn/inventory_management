@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views.generic import TemplateView, View
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from .forms import UserRegisterForm      # extends from forms.py
 
 class Index(TemplateView):
@@ -23,6 +23,6 @@ class SignUpView(View):
             )
             login(request, user)
             return redirect('index')
-        
         # return user back to signup page in case there is an error
         return render(request, 'inventory/signup.html', {'form': form})
+    

@@ -1,6 +1,7 @@
 {% extends "inventory/base.html" %}
 {% load crispy_forms_tags %}
 
+<!--Sign Up page user error handling-->
 {% block content %}
 <div class="row">
     <div class="col-11 col-md-4 mx-auto mt-5">
@@ -19,7 +20,7 @@
                     </div>
             {% endfor %}
         {% endif %}
-
+        <!--after checking for user errors, store credentials-->
         <form method="post">
             {% csrf_token %}
             {{ form|crispy }}

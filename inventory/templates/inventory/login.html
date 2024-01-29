@@ -1,6 +1,7 @@
 {% extends 'inventory/base.html' %}
 {% load crispy_forms_tags %}
 
+<!--user login page, authenticates user on button press-->
 {% block content %}
 <div class="row">
     <div class="col-11 col-md-4 mx-auto mt-5">
@@ -10,8 +11,11 @@
             {{ form|crispy }}
             <button class="btn btn-outline-secondary">Sign In</button>
         </form>
+        <!--sign up button in case it is a new user-->
         <div class="pt-3">
-            <small class="text-muted">Need an account? <a href="{% url 'signup' %}" class="ml-2">Sign Up</a></small>
+            <small class="text-muted">
+                Need an account?<a href="{% url 'signup' %}" class="ml-2"> Sign Up</a>
+            </small>
         </div>
     </div>
 </div>
