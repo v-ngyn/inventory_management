@@ -5,6 +5,12 @@ Inventory Management Interface
 
 **Dev Logs**
 --
+2/5/24
+- set up items table
+- added functionality for users to add items
+- added functionality to display items on a table
+  - categorized by item ID, name, quanity, and category
+
 1/29/24
 - fixed log out function
 - added navbar functionality
