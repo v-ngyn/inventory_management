@@ -2,6 +2,17 @@
 
 {% block content %}
 
-<h1>Hello welcome to my stuff</h1>
+<div>
+    <!--homepage-->
+    <div class="row">
+        <div class="col-sm-11 col-md-4 mx-auto mt-5 px-3">
+            <h1 clss="fw-light">Track and Manage Your Inventory</h1>
+            <p class="fw-light">Keep track of current inventory and recieve alerts if an item is low in stock.</p>
+            <div>
+                <a href="{% url 'dashboard' %}" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock content %}
