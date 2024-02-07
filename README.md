@@ -1,9 +1,30 @@
-Inventory Management Interface
-- Utilizes Django, Bootstrap, Python, HTML, and SQL
+<h1>Inventory Management Interface</h1>
+<p>Utilizes Django, Bootstrap, Python, HTML, and SQL</p>
+<p>Tools used: VScode & WSL</p>
 
-*This project is currently a work in progress.*
+<h2>How to set up environment and run this project</h2>
+<h3>1. Set up WSL environment and link with VScode</h3>
+<p>Refer to this <a href="https://code.visualstudio.com/docs/remote/wsl">link</a> from the VScode documentation.</p>
+<p>This should help you how to install WSL, manage VScode plugins, and establish a link between the two platforms.</p>
+<p>Make sure the project files are in the WSL subdirectory. You will have to transfer the files from Windows to WSL.</p>
 
-This project requires a Linux environment or WSL.
+<h3>2. Setting up Django and Python3</h3>
+<p>Run this command in the WSL console to install Python3:</p>
+
+``$ sudo pip install python3``
+
+<p>Run this command in the WSL console to install Django:</p>
+
+``$ sudo pip install django``
+
+<h3>3. Running server to localhost</h3>
+<p>Navigate to the project working directory to where you see the file manage.py</p>
+<p>Run this command in the WSL console:</p>
+
+``$ python3 manage.py runserver``
+
+<p>The server should be running on localhost:8000</p>
+<p>Type that link into your browser and you should be able to access the inventory manager.</p>
 
 **Dev Logs**
 --
