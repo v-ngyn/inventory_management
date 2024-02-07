@@ -2,16 +2,26 @@
 <p>Utilizes Django, Bootstrap, Python, HTML, and SQL</p>
 <p>Tools used: VScode & WSL</p>
 
+<br>
+
 <h2>How to set up environment and run this project</h2>
 <h3>1. Set up WSL environment and link with VScode</h3>
 <p>Refer to this <a href="https://code.visualstudio.com/docs/remote/wsl">link</a> from the VScode documentation.</p>
 <p>This should help you how to install WSL, manage VScode plugins, and establish a link between the two platforms.</p>
-<p>Make sure the project files are in the WSL subdirectory. You will have to transfer the files from Windows to WSL.</p>
+<p>Make sure the project files are in WSL in your working directory. You will have to transfer the files from Windows to the WSL subdirectory.</p>
 
 <h3>2. Setting up Django and Python3</h3>
+<p>Start by updating the package list using the following command in the WSL console:</p>
+
+``$ sudo apt update``
+
+<p>Use the following command in the WSL console to install pip for Python3:</p>
+
+``$ sudo apt install python3-pip``
+
 <p>Run this command in the WSL console to install Python3:</p>
 
-``$ sudo pip install python3``
+``$ sudo apt-get install python3``
 
 <p>Run this command in the WSL console to install Django:</p>
 
@@ -26,8 +36,10 @@
 <p>The server should be running on localhost:8000</p>
 <p>Type that link into your browser and you should be able to access the inventory manager.</p>
 
-**Dev Logs**
---
+<br>
+
+<h2>Dev Logs</h2>
+
 2/6/24
 - completed base functionality of inventory manager. no bugs have been detected so far.
 - i plan to add more visual information to dashboard; such as graphs, admin messages, etc.
