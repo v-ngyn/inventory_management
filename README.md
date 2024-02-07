@@ -3,8 +3,14 @@ Inventory Management Interface
 
 *This project is currently a work in progress.*
 
+This project requires a Linux environment or WSL.
+
 **Dev Logs**
 --
+2/6/24
+- completed base functionality of inventory manager. no bugs have been detected so far.
+- i plan to add more visual information to dashboard; such as graphs, admin messages, etc.
+
 2/5/24
 - set up items table
 - added functionality for users to add items
